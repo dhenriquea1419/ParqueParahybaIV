@@ -1,181 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
-
-html {
-    scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #fbfceb;
+}
+
+.navbar {
+    background-color: #0f402e;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fafad3;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #fbfceb;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #145940;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.carousel-inner .carousel-item:first-child img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; 
+    object-fit: cover; 
+}
+
+.carousel-inner .carousel-item img:not(:first-child) {
+    max-width: 80%;
+    margin: 10px;
+    border-radius: 12px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .imagemContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    max-width: 800px;
-    margin: 10px;
+    gap: 15px;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 15px 8px;
+    margin: 20px 0;
 }
 
 .imagemItem {
-    height: auto;
-}
-
-header {
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    overflow: hidden;
-    background-color: #145940;
-    height: 150px;
-}
-
-.bemVindoNav{
-    padding: 10px;
-    margin-left: 20px;
-}
-
-.textoHeader{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 5px;
-    margin-left: 20px;
-
-}
-
-.textoHeader h1{
-    color: #000000;
-    padding-bottom: 5px;
-    font-family: 'Embed code', sans-serif;
-    font-size: 45px;
-    margin-top: 35px;
-}
-.textoHeader p{
-    color: black;
-}
-
-.linhaHorizontal{
-    height: 2px;
-    background-color: #0000001c;
-    margin: 10px 0px;
-}
-
-
-.navbar {
+    max-width: 280px; 
     width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #0f402e;
-    padding: 15px 0 10px 56vw;
-    z-index: 999; /* Garante que a navbar fique acima de outros elementos */
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-  }
-  
-  .navbar li {
-    margin-right: 15px;
-  }
-  
-  .navbar a {
-    color: black;
-    text-decoration: none;
-    padding: 5px 8px;
-    font-weight: 500;
-  }
-
-  nav ul li a:hover {
-    color: #fafad3;
+    height: auto;
+    border-radius: 12px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-.carousel-custom {
-    width: 500px; /* Defina a largura desejada */
-    margin-left: 0; /* Alinha o carrossel à esquerda */
-}
-
-.carousel-custom .carousel-inner img {
-    width: 100%; /* Ajusta as imagens para ocupar toda a largura do carrossel */
-    height: auto; /* Mantém a proporção das imagens */
-    max-height: 300px; /* Define uma altura máxima para limitar o tamanho vertical */
-}
-
-#carouselExampleFade{
-    margin-left: 280px;
-    padding: 15px;
-}
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
-    height: 60px;
-    background-color: #B2B377;
 }
 
-h2{
-    padding: 20px 0;
-}
-
-h2, h3, h4, h5{
-    color: #51532b;
-}
-
-.info-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
-}
-
-.info-container h2 {
-    margin-top: 20px;
-    color: #51532b;
-    font-size: 1.8rem;
-}
-
-.info-container p {
-    margin: 10px 0;
-    font-size: 1rem;
-}
-
-.map-container {
-    margin: 20px 0;
+footer {
     text-align: center;
+    padding: 20px;
+    background-color: #b2b377;
+    color: #333;
 }
-#espaco {
-    margin-top: 50px;
-}
-#eventos {
-    margin-top: 50px;
-}
-
